@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <Layout>
-        <div>메인페이지 입니다.</div>
+        <div>수정 되는지 확인합니다.</div>
       </Layout>
     </>
   );
