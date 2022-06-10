@@ -1,0 +1,23 @@
+{
+  "name": "react-move",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "vercel-deploy": "next build && next export"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.21.0",
+    "gh-pages": "^4.0.0",
+    "next": "^9.5.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.3.5"
+  }
+}
