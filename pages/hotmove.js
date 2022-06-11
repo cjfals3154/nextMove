@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-function hotmove() {
+function HotMove() {
   return (
     <>
       <Layout>
@@ -10,4 +10,4 @@ function hotmove() {
   );
 }
 
-export default hotmove;
+export default HotMove;

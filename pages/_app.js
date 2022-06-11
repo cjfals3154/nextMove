@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "antd/dist/antd.css";
 import "../styles/globals.css";
-
+import wrapper from "../store/configureStore";
 function App({ Component }) {
   return (
     <>
@@ -16,4 +16,4 @@ function App({ Component }) {
 App.propTypes = {
   Component: PropTypes.elementType.isRequired,
 };
-export default App;
+export default wrapper.withRedux(App);

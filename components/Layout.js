@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu } from "antd";
+import { Menu, Input } from "antd";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -8,13 +8,13 @@ import styled from "styled-components";
 const TopMenu = styled(Menu)`
   background-color: #ffb500;
   border-bottom: none;
-  line-height: 75px;
-  font-size: 17px;
+  line-height: 65px;
+  font-size: 15px;
   font-weight: bold;
 `;
 
 const Alink = styled.a`
-  padding: 40px;
+  padding: 20px;
 `;
 function Layout({ children }) {
   return (
@@ -22,7 +22,7 @@ function Layout({ children }) {
       <TopMenu mode="horizontal">
         <Menu.Item>
           <Link href="/">
-            <div style={{ fontFamily: "Lobster, cursive", fontSize: 40 }}>
+            <div style={{ fontFamily: "Lobster, cursive", fontSize: 30 }}>
               <Alink>ShinCheolMin</Alink>
             </div>
           </Link>
@@ -42,10 +42,19 @@ function Layout({ children }) {
             <Alink>찜한영화</Alink>
           </Link>
         </Menu.Item>
+
         <Menu.Item>
           <Link href="/signup">
             <Alink>회원가입</Alink>
           </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Input.Search
+            placeholder="영화검색"
+            enterButton="Search"
+            size="large"
+            style={{ verticalAlign: "middle" }}
+          />
         </Menu.Item>
       </TopMenu>
       {children}
